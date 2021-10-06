@@ -1,5 +1,5 @@
 
 public class Point {
-	float x, y;
+	double x, y;
 
 }
