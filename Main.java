@@ -21,31 +21,39 @@ public class Main {
 		Line l2 = new Line();
 		l2.p3 = p3;
 		l2.p4 = p4;
-
-		Double x = l1.getLengthOne();
-		System.out.println("length of Line1 " + x);
-		Double y = l2.getLengthTwo();
-		System.out.println("length of Line2 " + y);
-		if (x.equals(y)) {
-			System.out.println("both lines equal");
-		} else {
-			System.out.println("both lines not equal");
-		}
 		
-		  int check = x.compareTo( y );
-	         if (check > 0)
-	         {
-	        	 System.out.println("line1 is greater than line2" );
-	         }
-	         else if (check < 0)
-	         {
-	        	 System.out.println("line2 is greater than line 1" );
-	         }
-	         else
-	         {
-	        	 System.out.println("line1 equal to line2" );
-	         }
+		Double x = l1.getLengthOne();
+		Double y = l2.getLengthTwo();
+		
+		
+		Line line = new Line();
+		line.checkEquality(x, y);
+		line.compareLines(x,y);
 
+//		Double x = l1.getLengthOne();
+//		System.out.println("length of Line1 " + x);
+//		Double y = l2.getLengthTwo();
+//		System.out.println("length of Line2 " + y);
+//		if (x.equals(y)) {
+//			System.out.println("both lines equal");
+//		} else {
+//			System.out.println("both lines not equal");
+//		}
+//		
+//		  int check = x.compareTo( y );
+//	         if (check > 0)
+//	         {
+//	        	 System.out.println("line1 is greater than line2" );
+//	         }
+//	         else if (check < 0)
+//	         {
+//	        	 System.out.println("line2 is greater than line 1" );
+//	         }
+//	         else
+//	         {
+//	        	 System.out.println("line1 equal to line2" );
+//	         }
+//
 	}
 
 }
